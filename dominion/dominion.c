@@ -1224,14 +1224,14 @@ int _tribute(struct gameState *state, int currentPlayer, int nextPlayer, int tri
 int _cutpurse(struct gameState *state, int handPos, int currentPlayer)
 {
   int i, j, k;
-  updateCoins(currentPlayer, state, 3);
-  for (i = 1; i < state->numPlayers; i++)
+  updateCoins(currentPlayer, state, 2);
+  for (i = 0; i < state->numPlayers; i++)
   {
     if (i != currentPlayer)
     {
       for (j = 0; j < state->handCount[i]; j++)
       {
-        if (state->hand[i][j] == silver)
+        if (state->hand[i][j] == copper)
         {
           discardCard(j, i, state, 0);
           break;
