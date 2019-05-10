@@ -1,0 +1,447 @@
+--------------------TESTING CARD: smithy--------------------
+Hand Count = 6, expected = 7
+Deck Count = 3, expected = 2
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 13, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: adventurer--------------------
+Hand Count = 7, expected = 6
+Deck Count = 3, expected = 2
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 7, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: minion--------------------
+----------------- Choice 1: add 2 coins ----------------
+Hand Count = 4, expected = 4
+Deck Count = 5, expected = 5
+Coins = 5, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+-- Choice 2: discard hand and get 4 cards; all other players only have 4 cards --
+Hand Count = 4, expected = 4
+Deck Count = 1, expected = 1
+Coins = 4, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 4
+Player2: Deck Count = 10, expected = 6
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: tribute--------------------
+TributeCards = 4 -1
+Hand Count = 8, expected = 4
+Deck Count = 2, expected = 5
+Coins = 6, expected = 6
+Actions = 2, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 19, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = -2
+Player2: Deck Count = 6, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: adventurer--------------------
+Hand Count = 4, expected = 4
+Deck Count = 5, expected = 5
+Coins = 5, expected = 6
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 7
+ unless Discard[discardCount]=0 expected=7
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: smithy in cardEffect--------------------
+Hand Count = 6, expected = 7
+Deck Count = 3, expected = 2
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 13, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: adventurer in cardEffect--------------------
+Hand Count = 7, expected = 6
+Deck Count = 3, expected = 4
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 7, expected != 7
+ unless Discard[discardCount]=7 expected=7
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: minion in cardEffect--------------------
+----------------- Choice 1: add 2 coins ----------------
+Hand Count = 4, expected = 4
+Deck Count = 5, expected = 5
+Coins = 5, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+-- Choice 2: discard hand and get 4 cards; all other players only have 4 cards --
+Hand Count = 4, expected = 4
+Deck Count = 1, expected = 1
+Coins = 4, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player1: Hand Count = 4, expected = 4
+Player1: Deck Count = 1, expected = 1
+Player2: Hand Count = 0, expected = 4
+Player2: Deck Count = 10, expected = 6
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: tribute in cardEffect--------------------
+TributeCards = 4 -1
+Hand Count = 8, expected = 4
+Deck Count = 2, expected = 5
+Coins = 6, expected = 6
+Actions = 2, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 19, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = -2
+Player2: Deck Count = 6, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.65% of 558
+Creating 'dominion.c.gcov'
+
