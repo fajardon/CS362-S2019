@@ -1,0 +1,444 @@
+--------------------TESTING CARD: smithy--------------------
+Hand Count = 7, expected = 7
+Deck Count = 2, expected = 2
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.82% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: adventurer--------------------
+Hand Count = 4, expected = 6
+Deck Count = 0, expected = -3
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 7, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.82% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: smithy in cardEffect--------------------
+Hand Count = 5, expected = 7
+Deck Count = 5, expected = 2
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 13, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 2, expected = 0
+Player2: Deck Count = 7, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.82% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: adventurer in cardEffect--------------------
+Hand Count = 4, expected = 6
+Deck Count = 0, expected = -1
+Coins = 4, expected = 4
+Actions = 1, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 7, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.82% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: minion in cardEffect--------------------
+----------------- Choice 1: add 2 coins ----------------
+Hand Count = 4, expected = 4
+Deck Count = 5, expected = 5
+Coins = 6, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player2: Hand Count = 0, expected = 0
+Player2: Deck Count = 10, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+-- Choice 2: discard hand and get 4 cards; all other players only have 4 cards --
+Hand Count = 4, expected = 4
+Deck Count = 1, expected = 1
+Coins = 4, expected = 4
+Actions = 2, expected = 2
+Buys = 1, expected = 1
+Hand[Handpos] = 4, expected != 13
+ unless Discard[discardCount]=0 expected=13
+Player1: Hand Count = 4, expected = 4
+Player1: Deck Count = 1, expected = 1
+Player2: Hand Count = 0, expected = 4
+Player2: Deck Count = 10, expected = 6
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+File 'dominion.c'
+Lines executed:30.82% of 558
+Creating 'dominion.c.gcov'
+
+--------------------TESTING CARD: tribute in cardEffect--------------------
+TributeCards = 4 -1
+Hand Count = 7, expected = 4
+Deck Count = 3, expected = 5
+Coins = 6, expected = 6
+Actions = 3, expected = 1
+Buys = 1, expected = 1
+Hand[Handpos] = 19, expected != 7
+ unless Discard[discardCount]=0 expected=7
+Player2: Hand Count = 0, expected = -2
+Player2: Deck Count = 6, expected = 10
+0 = 10, expected = 10
+1 = 8, expected = 8
+2 = 8, expected = 8
+3 = 8, expected = 8
+4 = 46, expected = 46
+5 = 40, expected = 40
+6 = 30, expected = 30
+7 = 10, expected = 10
+8 = 10, expected = 10
+9 = -1, expected = -1
+10 = -1, expected = -1
+11 = 10, expected = 10
+12 = -1, expected = -1
+13 = 10, expected = 10
+14 = 10, expected = 10
+15 = -1, expected = -1
+16 = -1, expected = -1
+17 = 10, expected = 10
+18 = -1, expected = -1
+19 = 10, expected = 10
+20 = -1, expected = -1
+21 = 10, expected = 10
+22 = 10, expected = 10
+23 = -1, expected = -1
+24 = -1, expected = -1
+25 = 10, expected = 10
+26 = -1, expected = -1
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 1
+
+Function 'discardCard'
+Lines executed:92.31% of 13
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:18.27% of 208
+Branches executed:34.08% of 179
+Taken at least once:17.88% of 179
+Calls executed:15.00% of 60
+
+Function 'effectVillage'
+Lines executed:0.00% of 5
+No branches
+Calls executed:0.00% of 2
+
+Function 'effectGardens'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'effectCouncilRoom'
+Lines executed:0.00% of 8
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 3
+
+Function 'effectSmithy'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'effectAdventure'
+Lines executed:94.12% of 17
+Branches executed:100.00% of 12
+Taken at least once:75.00% of 12
+Calls executed:50.00% of 2
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:77.27% of 22
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:100.00% of 2
+No branches
+Calls executed:100.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:80.65% of 62
+Branches executed:91.30% of 46
+Taken at least once:73.91% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:30.82% of 558
+Branches executed:35.90% of 415
+Taken at least once:24.82% of 415
+Calls executed:21.88% of 96
+Creating 'dominion.c.gcov'
+
