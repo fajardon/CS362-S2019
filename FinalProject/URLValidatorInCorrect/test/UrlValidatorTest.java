@@ -19,6 +19,7 @@ package test;
 
 import src.*;
 import junit.framework.TestCase;
+import java.util.Random;
 
 /**
  * Performs Validation Test for url validations.
@@ -142,6 +143,38 @@ protected void setUp() {
 	   UrlValidator urlValidator = new UrlValidator();
 	   assertTrue(urlValidator.isValid("https://www.amazon.com/"));
    }
+   
+   public void testRandomTest01() {
+	   UrlValidator urlVal = new UrlValidator(schemes);
+	   Random rand = new Random(); 
+	   
+	   for(int itr = 0; itr < 100; itr++) {
+		   StringBuilder testBuffer = new StringBuilder();
+	       boolean expected = true;
+	       
+	       ResultPair part1 = testUrlScheme[rand.nextInt(testUrlScheme.length)];
+	       ResultPair part2 = testUrlAuthority[rand.nextInt(testUrlAuthority.length)];
+	       ResultPair part3 = testUrlPort[rand.nextInt(testUrlPort.length)];
+	       ResultPair part4 = testPath[rand.nextInt(testPath.length)];
+	       ResultPair part5 = testUrlQuery[rand.nextInt(testUrlQuery.length)];
+	       testBuffer.append(part1.item);
+	       testBuffer.append(part2.item);
+	       testBuffer.append(part3.item);
+	       testBuffer.append(part4.item);
+	       testBuffer.append(part5.item);
+           expected &= part1.valid;
+           expected &= part2.valid;
+           expected &= part3.valid;
+           expected &= part4.valid;
+           expected &= part5.valid;
+	       
+	       String url = testBuffer.toString();
+	        
+	       boolean result = urlVal.isValid(url);
+	       assertEquals(url, expected, result);
+	   }
+   }
+   
    public void testValidator202() {
        String[] schemes = {"http","https"};
        UrlValidator urlValidator = new UrlValidator(schemes, UrlValidator.NO_FRAGMENTS);
