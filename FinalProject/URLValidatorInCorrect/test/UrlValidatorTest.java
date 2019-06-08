@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 
+package test;
+
+import src.*;
 import junit.framework.TestCase;
 
 /**
@@ -23,7 +26,7 @@ import junit.framework.TestCase;
  * @version $Revision$
  */
 public class UrlValidatorTest extends TestCase {
-
+   
    private final boolean printStatus = false;
    private final boolean printIndex = false;//print index that indicates current scheme,host,port,path, query test were using.
 
@@ -37,7 +40,8 @@ protected void setUp() {
          testPartsIndex[index] = 0;
       }
    }
-
+   
+   /*
    public void testIsValid() {
         testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
         setUp();
@@ -48,7 +52,7 @@ protected void setUp() {
 
         testIsValid(testUrlPartsOptions, options);
    }
-
+	*/
    public void testIsValidScheme() {
       if (printStatus) {
          System.out.print("\n testIsValidScheme() ");
@@ -124,7 +128,20 @@ protected void setUp() {
          System.out.println();
       }
    }
+   
+   public void testUnitTest01() {
+	   String[] schemes = {"http","https"};
+       UrlValidator urlValidator = new UrlValidator(schemes, UrlValidator.NO_FRAGMENTS);
+       assertTrue(urlValidator.isValid("https://www.amazon.com/"));
+       assertFalse(urlValidator.isValid("https://www.amazon/"));
+       assertFalse(urlValidator.isValid("htttps://www.amazon.com/"));
+       assertFalse(urlValidator.isValid("htttps://ww.amazon.com/"));
+   }
 
+   public void testUnitTest02() {
+	   UrlValidator urlValidator = new UrlValidator();
+	   assertTrue(urlValidator.isValid("https://www.amazon.com/"));
+   }
    public void testValidator202() {
        String[] schemes = {"http","https"};
        UrlValidator urlValidator = new UrlValidator(schemes, UrlValidator.NO_FRAGMENTS);
@@ -334,7 +351,7 @@ protected void setUp() {
     static boolean incrementTestPartsIndex(int[] testPartsIndex, Object[] testParts) {
       boolean carry = true;  //add 1 to lowest order part.
       boolean maxIndex = true;
-      for (int testPartsIndexIndex = testPartsIndex.length; testPartsIndexIndex >= 0; --testPartsIndexIndex) {
+      for (int testPartsIndexIndex = testPartsIndex.length-1; testPartsIndexIndex >= 0; --testPartsIndexIndex) {
           int index = testPartsIndex[testPartsIndexIndex];
          ResultPair[] part = (ResultPair[]) testParts[testPartsIndexIndex];
          maxIndex &= (index == (part.length - 1));

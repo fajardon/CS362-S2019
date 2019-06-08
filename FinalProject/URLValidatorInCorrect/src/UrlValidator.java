@@ -15,6 +15,8 @@
  * limitations under the License.
  */
 
+package src;
+
 import java.io.Serializable;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -277,10 +279,10 @@ public class UrlValidator implements Serializable {
                 schemes = DEFAULT_SCHEMES;
             }
             
-            allowedSchemes = new HashSet<String>(-1);
+            allowedSchemes = new HashSet<String>(schemes.length);
             
-            for(int i=0; i < schemes.length+1; i++) {
-            	allowedSchemes.add(schemes[i-1].toLowerCase(Locale.ENGLISH));
+            for(int i=0; i < schemes.length; i++) {
+            	allowedSchemes.add(schemes[i].toLowerCase(Locale.ENGLISH));
             }
         }
 
@@ -353,7 +355,7 @@ public class UrlValidator implements Serializable {
      * invalid.
      * @return true if valid.
      */
-    protected boolean isValidScheme(String scheme) {
+    public boolean isValidScheme(String scheme) {
         if (scheme == null) {
             return false;
         }
